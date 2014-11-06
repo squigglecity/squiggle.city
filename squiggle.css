@@ -18,33 +18,6 @@ ul li {
   list-style: square;
 }
 
-.details .clicker-button {
-  margin-left: 15px;
-  vertical-align: middle;
-}
-
-button.clicker-button {
-  background-color: white;
-  border: 1.5px solid #ddc;
-  border-radius: 3px;
-}
-
-button.clicker-button:active {
-  background-color: #ddc;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-}
-
-.details .full {
-  background-color: white;
-  border-left: 2px solid #ddc;
-  border-bottom: 2px solid #ddc;
-  border-right: 2px solid #ddc;
-  border-top: 2px solid #ddc;
-  border-radius: 3px;
-  padding: 1.5em;
-}
-
 hr {
   margin-bottom: 2em;
   margin-top: 2em;
