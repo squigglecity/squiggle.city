@@ -41,6 +41,10 @@ h1.bigtitle {
   margin-right: auto;
 }
 
+td.tiny {
+  font-size .25em;
+}
+
 a {
   color: #ff7e00;
   text-decoration: underline;
