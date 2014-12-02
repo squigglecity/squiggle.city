@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background-color: black;
   color: #00ff00;
   font-family: sans-serif;
   margin-left: auto;
@@ -8,6 +8,12 @@ body {
   max-width: 48em;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+#centercolumn {
+  background: black;
+  padding: 1em;
+  margin-top: 1em;
 }
 
 .contents ul li {

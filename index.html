@@ -5,6 +5,8 @@
   <title>welcome to squiggle city</title>
   <link rel="alternate" type="application/atom+xml" title="changes" href="feed.xml" />
   <link rel=stylesheet href="squiggle.css" />
+  <script type="text/javascript" src="//squiggle.city/js/jquery.js"></script>
+  <script type="text/javascript" src="//squiggle.city/js/p5/p5.min.js"></script>
 </head>
 
 <body>
@@ -14,6 +16,10 @@
   LET THE PRODUCTS SELL THEMSELVES
 
 -->
+
+<div id=squiggleCanvas style="position: fixed; bottom: 0; right: 0; z-index: -5000;"></div>
+
+<div id=centercolumn>
 
 <!-- this is output from toilet(1): -->
 
@@ -42,50 +48,12 @@ which is about how to unix, this is a place to explore the ideas it contains.</p
 
 <p>Users with home pages, by most recent update:</p>
 
-
-<table>
-  <tr><td><a href="/~robacarp/">~robacarp</a></td><td> The Chapstick Manəˈfestō </td><td class=tiny>1416509321</td></tr>
-  <tr><td><a href="/~acg/">~acg</a></td><td>acg on squiggle</td><td class=tiny>1416503732</td></tr>
-  <tr><td><a href="/~brennen/">~brennen</a></td><td>~brennen: QUESTION FOR ROBACARP</td><td class=tiny>1416463251</td></tr>
-  <tr><td><a href="/~erik/">~erik</a></td><td>Welcome to ~erik @ squiggle city</td><td class=tiny>1416190735</td></tr>
-  <tr><td><a href="/~frencil/">~frencil</a></td><td>Frencil's Corner</td><td class=tiny>1416178886</td></tr>
-  <tr><td><a href="/~kache2k/">~kache2k</a></td><td>welcome to squiggle city</td><td class=tiny>1416104685</td></tr>
-  <tr><td><a href="/~nick/">~nick</a></td><td>Source file</td><td class=tiny>1415844460</td></tr>
-  <tr><td><a href="/~jenleelind/">~jenleelind</a></td><td>jenleelind</td><td class=tiny>1415744281</td></tr>
-  <tr><td><a href="/~stilldavid/">~stilldavid</a></td><td>stilldavid @ ~C</td><td class=tiny>1415633208</td></tr>
-  <tr><td><a href="/~danlyke/">~danlyke</a></td><td>A Curmudgeonly Place</td><td class=tiny>1415408660</td></tr>
-  <tr><td><a href="/~zinefer/">~zinefer</a></td><td></td><td class=tiny>1415335485</td></tr>
-  <tr><td><a href="/~burnedboard/">~burnedboard</a></td><td>rabble rabble rabble</td><td class=tiny>1415167809</td></tr>
-  <tr><td><a href="/~tonicorinne/">~tonicorinne</a></td><td>Hello, my name is...</td><td class=tiny>1415138166</td></tr>
-  <tr><td><a href="/~bri_huang/">~bri_huang</a></td><td>welcome to squiggle city</td><td class=tiny>1415106171</td></tr>
-  <tr><td><a href="/~delio/">~delio</a></td><td>welcome to squiggle city</td><td class=tiny>1414794037</td></tr>
-  <tr><td><a href="/~leducmills/">~leducmills</a></td><td>welcome to squiggle city</td><td class=tiny>1414790419</td></tr>
-  <tr><td><a href="/~nallen/">~nallen</a></td><td>nallenweb, UNDER CONSTRUCTION</td><td class=tiny>1414785639</td></tr>
-  <tr><td><a href="/~trevor/">~trevor</a></td><td>welcome to squiggle city</td><td class=tiny>1414782228</td></tr>
-  <tr><td><a href="/~hord/">~hord</a></td><td>welcome to squiggle city</td><td class=tiny>1414781677</td></tr>
-  <tr><td><a href="/~mshorter/">~mshorter</a></td><td>welcome to squiggle city</td><td class=tiny>1414781604</td></tr>
-  <tr><td><a href="/~mike/">~mike</a></td><td>I literally can't even..</td><td class=tiny>1414779944</td></tr>
-  <tr><td><a href="/~nightliz/">~nightliz</a></td><td>welcome to nightliz's home on squiggle city</td><td class=tiny>1414779873</td></tr>
-  <tr><td><a href="/~typexawesome/">~typexawesome</a></td><td>welcome to squiggle city</td><td class=tiny>1414767745</td></tr>
-  <tr><td><a href="/~kirstenrk/">~kirstenrk</a></td><td>welcome to squiggle city</td><td class=tiny>1414707042</td></tr>
-  <tr><td><a href="/~jimblom/">~jimblom</a></td><td>so it goes</td><td class=tiny>1414703086</td></tr>
-  <tr><td><a href="/~berkay/">~berkay</a></td><td>welcome to squiggle city</td><td class=tiny>1414382034</td></tr>
-  <tr><td><a href="/~randy/">~randy</a></td><td>Best at room temperature</td><td class=tiny>1414188299</td></tr>
-  <tr><td><a href="/~joe/">~joe</a></td><td>Joe's page</td><td class=tiny>1414180438</td></tr>
-  <tr><td><a href="/~fazol/">~fazol</a></td><td>empirical regret</td><td class=tiny>1414007199</td></tr>
-  <tr><td><a href="/~ahava/">~ahava</a></td><td>welcome to squiggle city</td><td class=tiny>1414006494</td></tr>
-  <tr><td><a href="/~thcipriani/">~thcipriani</a></td><td></td><td class=tiny>1414001337</td></tr>
-  <tr><td><a href="/~ben/">~ben</a></td><td>ben.</td><td class=tiny>1413990593</td></tr>
-  <tr><td><a href="/~jbd/">~jbd</a></td><td>welcome to squiggle city</td><td class=tiny>1413988747</td></tr>
-  <tr><td><a href="/~todd/">~todd</a></td><td>~todd</td><td class=tiny>1413838353</td></tr>
-  <tr><td><a href="/~casey/">~casey</a></td><td>caseh</td><td class=tiny>1413825941</td></tr>
-</table>
+<!--# include file="listusers.html" -->
 
 <p>Would you like an account?  Get ahold of ~brennen one of these ways:</p>
 
 <ul>
   <li>Write an e-mail to bbearnes at Google's giant, world-eating e-mail service.</li>
-  <li><a href="https://twitter.com/brennen">@brennen on twitter</a></li>
   <li><a href="https://ello.co/brennen">@brennen on ello</a></li>
 </ul>
 
@@ -99,6 +67,119 @@ about that.  My life is a bit of a shambles but I'll get there.)</p>
 <p style="position: fixed; right: 20px; bottom: 20px; font-size: 10px;"><a href="/menu/">&#960;</a></p>
 
 <hr>
+
+</div> <!-- end of center column -->
+
+<script>
+   $(function () {
+     var s2 = function(sketch) {
+       var square, world;
+
+       var handle_bounce = function () {
+         world.bounces++;
+
+         if (Math.random() > .3) {
+           randomitup();
+         }
+       };
+
+       var randomitup = function () {
+         var color_space = 255;
+
+         square.step  = Math.random() * ($(window).height() / 20);
+         square.size  = Math.random() * world.max_square_size;
+
+         square.red   = Math.round(Math.random() * color_space);
+         square.green = Math.round(Math.random() * color_space);
+         square.blue  = Math.round(Math.random() * color_space);
+       };
+
+       sketch.setup = function() {
+         world = {
+           bounces: 0,
+
+           // size of the canvas
+           width: $(window).width(),
+           height: $(window).height(),
+
+           // background fill
+           background_color: sketch.color(
+             Math.round(Math.random() * 255),
+             Math.round(Math.random() * 255),
+             Math.round(Math.random() * 255)
+           )
+         };
+
+         // how big can the box get in this world?
+         world.max_square_size = Math.round((world.width / 8) * Math.random());
+
+         if (typeof console.log !== undefined) {
+           console.log(world);
+         }
+
+         square = {
+           // where we draw the box
+           x: Math.random() * world.width,
+           y: Math.random() * world.height,
+
+           // what we add to x & y to move the box
+           x_mover: Math.random() - Math.random(),
+           y_mover: Math.random() - Math.random()
+         };
+
+         randomitup();
+         sketch.createCanvas(world.width, world.height);
+         sketch.background(world.background_color);
+         sketch.fill(255);
+       };
+
+       sketch.draw = function() {
+
+         var bounced = false;
+
+         if (square.x > world.width) {
+           square.x_mover = 0 - (Math.random());
+           bounced = true;
+         }
+
+         if (square.y > world.height) {
+           square.y_mover = 0 - (Math.random());
+           bounced = true;
+         }
+
+         if (square.x <= 0) {
+           square.x_mover = Math.random();
+           bounced = true;
+         }
+
+         if (square.y <= 0) {
+           square.y_mover = Math.random();
+           bounced = true;
+         }
+
+         if (bounced) {
+           handle_bounce();
+         }
+
+         square.x += (square.x_mover * square.step);
+         square.y += (square.y_mover * square.step);
+
+         sketch.push();
+           sketch.stroke(square.red, square.green, square.blue);
+           sketch.fill(square.red, square.green, square.blue);
+           sketch.rect(square.x, square.y, square.size, square.size);
+         sketch.pop();
+       };
+     };
+
+     var myp5;
+     myp5 = new p5(s2, 'squiggleCanvas');
+
+     $(window).resize(function () {
+       myp5.setup();
+     });
+   });
+</script>
 
 </body>
 </html>
