@@ -6,6 +6,7 @@
   <link rel="alternate" type="application/atom+xml" title="changes" href="feed.xml" />
   <link rel=stylesheet href="squiggle.css" />
   <script type="text/javascript" src="//squiggle.city/js/jquery.js"></script>
+  <script type="text/javascript" src="//squiggle.city/js/jquery.tablesorter.js"></script> 
   <script type="text/javascript" src="//squiggle.city/js/p5/p5.min.js"></script>
 </head>
 
@@ -21,34 +22,18 @@
 
 <div id=centercolumn>
 
-<!-- this is output from toilet(1): -->
-
-<div style="font-family: monospace, fixed; font-weight: bold; padding: 2em; margin-top: 1em; speak: none; text-shadow: 2px 2px 2px;">
-<span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br />
-<span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#ff5">&quot;</span><span style=";color:#5f5">&quot;#</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br />
-<span style=";color:#ff5">m</span><span style="">&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#55f">m</span><span style="">&#160;&#160;</span><span style=";color:#f5f">m</span><span style=";color:#f55">mm</span><span style="">&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#5ff">#</span><span style="">&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#f55">m</span><span style=";color:#ff5">mm</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#55f">mm</span><span style=";color:#f5f">m</span><span style="">&#160;&#160;&#160;</span><span style=";color:#ff5">mm</span><span style=";color:#5f5">mm</span><span style=";color:#5ff">m</span><span style="">&#160;&#160;&#160;</span><span style=";color:#f5f">mm</span><span style=";color:#f55">m</span><span style="">&#160;&#160;</span><br />
-<span style=";color:#5f5">&quot;m</span><span style="">&#160;</span><span style=";color:#5ff">m</span><span style="">&#160;</span><span style=";color:#55f">m</span><span style=";color:#f5f">&quot;</span><span style="">&#160;</span><span style=";color:#f55">#&quot;</span><span style="">&#160;&#160;</span><span style=";color:#5f5">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#55f">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#ff5">#&quot;</span><span style="">&#160;&#160;</span><span style=";color:#5ff">&quot;</span><span style="">&#160;&#160;</span><span style=";color:#55f">#</span><span style=";color:#f5f">&quot;</span><span style="">&#160;</span><span style=";color:#f55">&quot;#</span><span style="">&#160;&#160;</span><span style=";color:#5f5">#</span><span style="">&#160;</span><span style=";color:#5ff">#</span><span style="">&#160;</span><span style=";color:#55f">#</span><span style="">&#160;&#160;</span><span style=";color:#f5f">#</span><span style=";color:#f55">&quot;</span><span style="">&#160;&#160;</span><span style=";color:#ff5">#</span><span style="">&#160;</span><br />
-<span style="">&#160;</span><span style=";color:#5ff">#</span><span style=";color:#55f">m#</span><span style=";color:#f5f">m#</span><span style="">&#160;&#160;</span><span style=";color:#ff5">#&quot;</span><span style=";color:#5f5">&quot;&quot;</span><span style=";color:#5ff">&quot;</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#5f5">#</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;&#160;&#160;</span><span style=";color:#ff5">#</span><span style="">&#160;&#160;</span><span style=";color:#5ff">#</span><span style="">&#160;</span><span style=";color:#55f">#</span><span style="">&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;&#160;</span><span style=";color:#f55">#</span><span style=";color:#ff5">&quot;&quot;</span><span style=";color:#5f5">&quot;&quot;</span><span style="">&#160;</span><br />
-<span style="">&#160;&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;</span><span style=";color:#f55">#</span><span style="">&#160;&#160;&#160;</span><span style=";color:#5f5">&quot;#</span><span style=";color:#5ff">mm</span><span style=";color:#55f">&quot;</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#f55">&quot;</span><span style=";color:#ff5">mm</span><span style="">&#160;&#160;</span><span style=";color:#5ff">&quot;#</span><span style=";color:#55f">mm</span><span style=";color:#f5f">&quot;</span><span style="">&#160;&#160;</span><span style=";color:#f55">&quot;</span><span style=";color:#ff5">#m</span><span style=";color:#5f5">#&quot;</span><span style="">&#160;&#160;</span><span style=";color:#55f">#</span><span style="">&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;</span><span style=";color:#f55">#</span><span style="">&#160;&#160;</span><span style=";color:#ff5">&quot;</span><span style=";color:#5f5">#m</span><span style=";color:#5ff">m&quot;</span><span style="">&#160;</span><br />
-</div>
-
-<pre style="speak: none;">
- _____ ___           /\/|        ____ ___ _______   __
-|_   _/ _ \         |/\/        / ___|_ _|_   _\ \ / /  
-  | || | | |                   | |    | |  | |  \ V / 
-  | || |_| |  s q u i g g le   | |___ | |  | |   | |  
-  |_| \___/                     \____|___| |_|   |_|  
-                             
-</pre>
+<!--# include file="welcome.html" -->
 
 <p>squiggle.city is a unix server in the spirit of <a
 href="//tilde.club/">tilde.club</a>.  It's for making web pages and learning about
 the command line.  If you are reading <a href="https://p1k3.com/userland-book">userland</a>,
 which is about how to unix, this is a place to explore the ideas it contains.</p>
 
-<p>Users with home pages, by most recent update:</p>
+<hr>
 
 <!--# include file="listusers.html" -->
+
+<hr>
 
 <p>Would you like an account?  Get ahold of ~brennen one of these ways:</p>
 
@@ -61,17 +46,15 @@ which is about how to unix, this is a place to explore the ideas it contains.</p
 jerk to anyone. If you know what a public key is, you can also include one of
 those, but if you don't, don't worry.  I'll talk you through it.</p>
 
-<p>(If you're waiting on an account and I haven't gotten back to you, sorry
-about that.  My life is a bit of a shambles but I'll get there.)</p>
-
 <p style="position: fixed; right: 20px; bottom: 20px; font-size: 10px;"><a href="/menu/">&#960;</a></p>
-
-<hr>
 
 </div> <!-- end of center column -->
 
 <script>
    $(function () {
+
+     $('table').tablesorter();
+
      var s2 = function(sketch) {
        var square, world;
 

@@ -100,3 +100,7 @@ blockquote.callout {
 blockquote.callout p {
   margin-top: 0;
 }
+
+table thead tr th {
+  cursor: pointer;
+}

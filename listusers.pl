@@ -34,7 +34,7 @@ sub sort_by_time {
    $dirs{$b} <=> $dirs{$a};
 }
 
-my $list = "<table>\n";
+my $list = "<table><thead><tr><th>~citizen</th> <th>title</th> <th>mtime</th></tr></thead><tbody>\n";
 foreach my $key (sort sort_by_time (keys(%dirs))) {
    $list .= '  <tr>'
           . '<td><a href="/~' . $key . '/">~' . $key . '</a></td>'
@@ -43,7 +43,7 @@ foreach my $key (sort sort_by_time (keys(%dirs))) {
           . "</tr>\n";
 }
 
-$list .= "</table>";
+$list .= "</tbody></table>";
 
 say $list;
 
