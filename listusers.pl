@@ -3,6 +3,13 @@
 use strict;
 use warnings;
 use 5.10.0;
+use Getopt::Long;
+use POSIX qw(strftime);
+
+my $do_html;
+GetOptions(
+  "html" => \$do_html,
+);
 
 # we'll use this to filter out people who haven't logged in.
 # pretty silly!
@@ -18,7 +25,7 @@ opendir(my $dh, '/home/')
 my %dirs;
 my %titles;
 while (my $dir = readdir $dh) {
-  next if $dir =~ /^[.]/;
+  next if $dir =~ /^[.]|takosuke/;
   next unless $whitelist{$dir};
  
   my $index_html_path = "/home/$dir/public_html/index.html";
@@ -34,16 +41,24 @@ sub sort_by_time {
    $dirs{$b} <=> $dirs{$a};
 }
 
-my $list = "<table><thead><tr><th>~citizen</th> <th>title</th> <th>mtime</th></tr></thead><tbody>\n";
-foreach my $key (sort sort_by_time (keys(%dirs))) {
-   $list .= '  <tr>'
-          . '<td><a href="/~' . $key . '/">~' . $key . '</a></td>'
-          . '<td>' . $titles{$key} . '</td>'
-          . '<td class=tiny>' . $dirs{$key} . '</td>'
-          . "</tr>\n";
-}
+my $list = '';
+if ($do_html) {
+  $list = "<table><thead><tr><th>~citizen</th> <th>title</th> <th>mtime</th></tr></thead><tbody>\n";
+  foreach my $key (sort sort_by_time (keys(%dirs))) {
+    $list .= '  <tr>'
+	   . '<td><a href="/~' . $key . '/">~' . $key . '</a></td>'
+	   . '<td>' . $titles{$key} . '</td>'
+	   . '<td class=tiny>' . $dirs{$key} . '</td>'
+	   . "</tr>\n";
+  }
 
-$list .= "</tbody></table>";
+  $list .= "</tbody></table>";
+} else {
+  $list = "username\ttitle\tmtime\n";
+  foreach my $key (sort sort_by_time (keys(%dirs))) {
+    $list .= join("\t", $key, $titles{$key}, $dirs{$key}) . "\n";
+  }
+}
 
 say $list;
 
