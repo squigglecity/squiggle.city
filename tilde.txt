@@ -1,0 +1,7 @@
+name: squiggle.city
+url: http://squiggle.city
+signup_url: http://squiggle.city
+signup_instructions: e-mail bbearnes@gmail.com with your desired username and public SSH key, plus a promise not to be a jerk.
+no_users: 65,
+want_users: true,
+description: squiggle.city is a unix server in the spirit of tilde.club. It's for making web pages and learning about the command line. If you are reading userland, which is about how to unix, this is a place to explore the ideas it contains.

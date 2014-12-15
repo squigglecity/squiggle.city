@@ -25,7 +25,7 @@ opendir(my $dh, '/home/')
 my %dirs;
 my %titles;
 while (my $dir = readdir $dh) {
-  next if $dir =~ /^[.]|takosuke/;
+  next if $dir =~ /^[.]/;
   next unless $whitelist{$dir};
  
   my $index_html_path = "/home/$dir/public_html/index.html";
